@@ -1,0 +1,2 @@
+const rules=["Team size: 2–4 members","Free registration","Original ideas only","PPT/demo presentation required","No plagiarism","Judges’ decision final"];
+export default function Rules(){return <section id="rules" className="py-24 px-4"><div className="max-w-6xl mx-auto"><h2 className="text-4xl font-bold mb-8">Rules</h2><div className="grid md:grid-cols-2 gap-4">{rules.map(r=><div key={r} className="glass-card rounded-xl p-5">{r}</div>)}</div></div></section>}

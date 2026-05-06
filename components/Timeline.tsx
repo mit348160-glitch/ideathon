@@ -1,0 +1,2 @@
+const points=["Registration opens — 1 Apr 2026","Registration closes — 15 May 2026","Idea submission — 18 May 2026","Event day — 22 May 2026","Final presentation — 22 May 2026","Winner announcement — 22 May 2026"];
+export default function Timeline(){return <section id="timeline" className="py-24 px-4"><div className="max-w-5xl mx-auto"><h2 className="text-4xl font-bold mb-8">Timeline</h2><div className="border-l border-primary-400 pl-6 space-y-4">{points.map(p=><div className="glass-card rounded-xl p-4" key={p}>{p}</div>)}</div></div></section>}

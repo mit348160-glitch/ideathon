@@ -1,0 +1,2 @@
+const faqs=[["Who can join?","Any UG/PG student."],["Is this free?","Yes, completely free."],["How many members?","2-4 members per team."]];
+export default function FAQ(){return <section id="faq" className="py-24 px-4"><div className="max-w-4xl mx-auto"><h2 className="text-4xl font-bold mb-8">FAQ</h2><div className="space-y-3">{faqs.map(([q,a])=><div className="glass-card rounded-xl p-5" key={q}><p className="font-semibold">{q}</p><p className="text-slate-300">{a}</p></div>)}</div></div></section>}
