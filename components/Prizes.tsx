@@ -1,0 +1,1 @@
+export default function Prizes(){return <section id="prizes" className="py-24 px-4"><div className="max-w-6xl mx-auto"><h2 className="text-4xl font-bold mb-8">Prizes</h2><div className="grid md:grid-cols-3 gap-4">{["Certificates","Recognition","Networking Opportunities"].map(i=><div key={i} className="glass-card rounded-2xl p-6">{i}</div>)}</div></div></section>}

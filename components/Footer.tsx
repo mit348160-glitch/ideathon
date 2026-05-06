@@ -1,0 +1,1 @@
+export default function Footer(){return <footer className="px-4 py-10 text-center text-slate-400 border-t border-white/10">© 2026 MIT Ideathon. Built for Maharaja Institute of Technology Mysore.</footer>}

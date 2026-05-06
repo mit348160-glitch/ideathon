@@ -1,0 +1,4 @@
+"use client";
+import { AnimatePresence, motion } from "framer-motion";
+const FORM="https://docs.google.com/forms/d/e/1FAIpQLSdExampleMitIdeathon2026/viewform?embedded=true";
+export default function RegistrationModal({isOpen,onClose}:{isOpen:boolean;onClose:()=>void}){return <AnimatePresence>{isOpen&&<motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="fixed inset-0 z-50 p-4 flex items-center justify-center"><div className="absolute inset-0 bg-black/70" onClick={onClose}/><div className="relative w-full max-w-5xl glass-card rounded-2xl p-4"><div className="flex justify-between mb-3"><h3 className="text-xl font-semibold">Register for MIT Ideathon 2026</h3><button onClick={onClose}>Close</button></div><iframe src={FORM} title="Registration" className="w-full h-[70vh] rounded-xl bg-white"/></div></motion.div>}</AnimatePresence>}
